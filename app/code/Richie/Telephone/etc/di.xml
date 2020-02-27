@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../vendor/magento/framework/ObjectManager/etc/config.xsd">
+	<type name="Magento\Checkout\Controller\Index\Index">
+		<plugin name="telephone_cart_redirection"
+                type="Richie\Telephone\Plugin\Controller\Checkout\Index\Index" />
+	</type>
+
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="vendor_assign_default_value" type="Richie\Telephone\Plugin\Model\Checkout\LayoutProcessor" sortOrder="100"/>
+    </type>
+</config>
